@@ -1,1 +1,2 @@
 # JS-practices
+JavaScript learning
