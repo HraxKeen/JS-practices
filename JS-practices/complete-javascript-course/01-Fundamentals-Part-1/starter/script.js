@@ -144,7 +144,7 @@ if (favourite === 23) {
 }
 
 if (favourite !== 23) console.log("Why not 23");
-*/
+
 
 const hasDriversLicense = true; // A
 const hasGoodVision = true; // B
@@ -160,7 +160,7 @@ if (hasDriversLicense && hasGoodVision) {
 } else {
   console.log("Someone else should drive...");
 }
-*/
+
 const isTired = true; // C
 
 console.log(hasDriversLicense && hasGoodVision && isTired);
@@ -170,3 +170,55 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
   console.log("Someone else should drive...");
 }
+
+
+const day = prompt("What day is it");
+
+switch (day) {
+  case "monday":
+    console.log("Plan learning structure");
+    console.log("Open PC");
+    break;
+  case "tuesday":
+    console.log("Prepare learning videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code exmples");
+    break;
+  case "friday":
+    console.log("Start weekend");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend (❁´◡`❁)");
+    break;
+  default:
+    console.log("Not a valid day");
+}
+
+if (day === "monday") {
+  console.log("Plan learning structure");
+  console.log("Open PC");
+} else if (day === "tuesday") {
+  console.log("Prepare learning videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code exmples");
+} else if (day === "friday") {
+  console.log("Start weekend");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy the weekend (❁´◡`❁)");
+} else {
+  console.log("Not a valid day");
+}
+
+
+const age = Number(prompt("Age ?"));
+
+age >= 18
+  ? console.log("i like to drink wine 😊") // if part
+  : console.log("i like to drink water 😅"); // else part
+*/
+const age = Number(prompt("Age ?"));
+
+console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
