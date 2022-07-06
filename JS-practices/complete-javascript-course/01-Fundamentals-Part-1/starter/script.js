@@ -218,7 +218,8 @@ const age = Number(prompt("Age ?"));
 age >= 18
   ? console.log("i like to drink wine 😊") // if part
   : console.log("i like to drink water 😅"); // else part
-*/
+
 const age = Number(prompt("Age ?"));
 
 console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
+*/
