@@ -131,4 +131,65 @@ function describePopulation(country, poulation) {
 }
 describePopulation(country, poulation);
 //-----------------------------------------------------------
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years`);
+    return retirement;
+  } else {
+    console.log(`${firstName} has already retired 🥳`);
+    return -1;
+  }
+
+  //return ;
+};
+
+console.log(yearsUntilRetirement(1991, `Jonas`));
+console.log(yearsUntilRetirement(1970, `Mike`));
+
+//-----------------------------------------------------------
+
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+
+const firstName = "Jonas";
+const jonas = [firstName, "Schmedtmann", 2037 - 1991, "teacher", friends];
+console.log(jonas);
+
+
+const populations = new Array(1441, 126, 55, 83);
+console.log(populations.length === 4);
+
+const country = ["China", "Japan", "Finland", "Germany"];
+
+const calcPercentages = (population) => (population / 7900) * 100;
+
+const percentages = [
+  calcPercentages(populations[0]),
+  calcPercentages(populations[1]),
+  calcPercentages(populations[2]),
+  calcPercentages(populations[3]),
+];
+console.log(country);
+console.log(percentages);
 */
+//-----------------------------------------------------------
